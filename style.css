@@ -12,13 +12,29 @@
 
 @font-face {
     font-family: PoppinsLight;
-    src: url(fonts/PoppinsLight.ttf);
+    src: url(fonts/Poppins-Light.ttf);
 }
 
 
 /* BODY */
 
+html{
+    height: 100%;
+}
+
 body {
+    font-family: PoppinsMedium;
+    padding-bottom: 250px;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+}
+
+p {
+    font-family: PoppinsLight;
+}
+
+h3{
     font-family: PoppinsMedium;
 }
 
@@ -38,6 +54,13 @@ body {
     display: block;
     text-align: center;
     padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+    font-family: PoppinsBold;
+}
+
+a:hover {
+    color: skyblue;
 }
 
 
@@ -54,14 +77,15 @@ body {
 
 /* FOOTER */
 .footer {
-    position: fixed;
-    left: 0;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    padding:20px;
+    padding: 20px;
     background-color: black;
     color: white;
+    text-align: right;
 }
+
 
 
 
@@ -70,6 +94,7 @@ body {
 .mainbody-container {
     display: flex;
     padding: 50px;
+    padding-bottom: 150px;
 }
 
 * {
@@ -113,3 +138,58 @@ img {
     justify-self: flex-end;
     text-align: center;
 }
+
+/* EXHBITION */
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin:auto; 
+    transition-timing-function: ease;
+}
+
+.permanentExhibition{
+    display: flex;
+    border: 1.5px solid black;
+}
+
+.permanentExhibitionImage{
+    padding-right: 20px;
+}
+
+.featuredExhibition {
+    display: flex;
+    border: 1.5px solid black;
+    margin-top: 10px;
+
+}
+
+.featuredExhibitionImage {
+    padding-right: 20px;
+}
+
+
+
+/* TICKETS PAGE --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.tickets-container{
+    padding: 100px;
+}
+
+.ticketsCow{
+    float: right;
+}
+
+
+input[type=submit] {
+    font-family: PoppinsBold;
+    background-color: #000000;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+    
