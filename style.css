@@ -1,0 +1,115 @@
+/* ADDING FONTS */
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: PoppinsLight;
+    src: url(fonts/PoppinsLight.ttf);
+}
+
+
+/* BODY */
+
+body {
+    font-family: PoppinsMedium;
+}
+
+/* NAVIGATION BAR */
+
+.header{
+    float: left;
+}
+
+#navigation{
+    display: flex;
+   
+}
+
+.nav_link a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid black;
+    padding: 10px;
+}
+
+
+
+
+
+/* FOOTER */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding:20px;
+    background-color: black;
+    color: white;
+}
+
+
+
+/* SLIDESHOWS + OPENING HOURS */
+
+.mainbody-container {
+    display: flex;
+    padding: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 750px;
+    position: relative;
+    margin: auto;
+    flex-basis: 60%;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}   
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.openingHours{
+    flex-basis: 40%;
+    justify-self: flex-end;
+    text-align: center;
+}
