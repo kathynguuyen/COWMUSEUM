@@ -1,6 +1,6 @@
 // FAQ
 
-var acc = document.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName("faq");
 console.log("acc");
 var i;
 
